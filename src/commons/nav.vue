@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="nav" @click='hide'>
     <i class="fa fa-bars" aria-hidden="true"></i>
     <span>首页</span>
@@ -78,3 +78,4 @@ export default {
     background: #ccc;
   }
 </style>
+ -->
