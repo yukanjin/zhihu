@@ -1,18 +1,18 @@
 <template>
   <div class="index">
-    <navbar></navbar>
+    <!-- <navbar></navbar> -->
     <lunbo></lunbo>
     <list :news='news'></list> 
   </div>
 </template>
 
 <script>
-import nav from '@/commons/nav'
+// import nav from '@/commons/nav'
 import banner from '@/commons/banner'
 import list from '@/commons/list'
 export default {
   components: {
-    navbar: nav,
+    // navbar: nav,
     lunbo: banner,
     list: list
   },
