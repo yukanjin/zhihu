@@ -1,8 +1,8 @@
 <template>
   <div class="item">
-    <p>{{ newi.title }}</p>
+    <p>{{ newi.images[0] }}</p>
     <div class="img-box">
-      <img src="../assets/top.jpg" />
+      <img :src='newi.images[0]' />
     </div>
   </div>
 </template>
@@ -36,10 +36,11 @@ export default {
     background: gray;
     width:.8rem;
     height:.65rem;
+    font-size: 0;
   }
   img{
-    width:.8rem;
-    height: .65rem;
+    width:100%;
+    height: 100%;
     vertical-align: top;
   }
 </style>
