@@ -1,6 +1,6 @@
 <template>
   <div class="item">
-    <p>{{ newi.images[0] }}</p>
+    <p>{{ newi.title }}</p>
     <div class="img-box">
       <img :src='newi.images[0]' />
     </div>
