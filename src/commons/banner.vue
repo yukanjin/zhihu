@@ -1,21 +1,14 @@
 <template>
   <div class="banner">
-    <img src="../assets/top.jpg" />
-    <p>{{ news.title }}</p>
-    <span v-if='news.author != ""'>{{ news.author }}</span>
+    <img :src='newi.image' />
+    <p>{{ newi.title }}</p>
+    <span v-if='newi.author'>{{ newi.author }}</span>
   </div>
 </template>
 
 <script>
 export default {
-  data () {
-    return {
-      news: {
-        title: '新闻标题',
-        author: '作者'
-      }
-    }
-  }
+  props: ['newi']
 }
 </script>
 
@@ -23,6 +16,7 @@ export default {
   .banner{
     position: relative;
     width: 100%;
+    height:3rem;
     margin-bottom: -25px;
   }
   img{

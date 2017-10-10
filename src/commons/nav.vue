@@ -44,7 +44,11 @@ export default {
 
 <style scoped>
   .nav{
-    position: relative;
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    z-index:999;
     padding:.1rem .2rem;
     background: #008bed;
     color: #fff;
